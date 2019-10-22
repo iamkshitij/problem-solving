@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CompressedStrings",
+            "request": "launch",
+            "mainClass": "CompressedStrings"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - URLify",
             "request": "launch",
             "mainClass": "URLify"
