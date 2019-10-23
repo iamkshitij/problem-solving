@@ -4,7 +4,7 @@
 public class CompressedStrings {
     public static void main(String[] args) {
         String result;
-        result = compressed("sstta");
+        result = compressed("sstttta");
         System.out.println(result);
     }
 

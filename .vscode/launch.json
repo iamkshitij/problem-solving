@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - OneAway",
+            "request": "launch",
+            "mainClass": "OneAway",
+            "projectName": "problem-solving_aa19aa95"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PaindromePermutation",
+            "request": "launch",
+            "mainClass": "PaindromePermutation",
+            "projectName": "problem-solving_aa19aa95"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CompressedStrings",
             "request": "launch",
             "mainClass": "CompressedStrings"
