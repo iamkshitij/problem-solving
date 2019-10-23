@@ -24,7 +24,7 @@ public class OneAway {
         int i2 = 0;//1 2 3//1
         while(i2 < w2.length() && i1 < w1.length()){
             if(w1.charAt(i1) != w2.charAt(i2)){
-                if(i1 != i2) {return false;}
+                if(i1 != i2) return false;
                 i2++;
             }else{
                     i1++;
