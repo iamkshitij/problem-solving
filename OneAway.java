@@ -12,14 +12,10 @@ public class OneAway {
         int len1 = str1.length();
         int len2 = str2.length();
 
-        if(len1 == len2)
-            res = isEditable(str1, str2);
-        else if(len1 > len2)
-            res = isOneEdit(str2, str1);
-        else
-            res = isOneEdit(str1, str2);
+        if(len1 == len2) res = isEditable(str1, str2);
+        res = len1 > len2 ? isOneEdit(str2, str1) : isOneEdit(str1, str2);
         
-            System.out.println(res);
+        System.out.println(res);
     }
 
 
