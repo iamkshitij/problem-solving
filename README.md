@@ -5,3 +5,4 @@
 ## 3. Urlify a given string
 ## 4. One Edit away
 ## 5. String Compression
+## 6. String Rotation
