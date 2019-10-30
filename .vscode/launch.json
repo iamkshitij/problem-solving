@@ -2,6 +2,24 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LoveLetterMystery",
+            "request": "launch",
+            "mainClass": "LoveLetterMystery"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Substr",
+            "request": "launch",
+            "mainClass": "Substr"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - OneAway",
             "request": "launch",
             "mainClass": "OneAway",
