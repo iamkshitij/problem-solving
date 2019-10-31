@@ -2,6 +2,7 @@
     "configurations": [
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "CodeLens (Launch) - LinkedList",
             "request": "launch",
             "mainClass": "LinkedList"
@@ -17,6 +18,12 @@
             "name": "CodeLens (Launch) - Substr",
             "request": "launch",
             "mainClass": "Substr"
+=======
+            "name": "CodeLens (Launch) - StringRotation",
+            "request": "launch",
+            "mainClass": "StringRotation",
+            "projectName": "problem-solving_aa19aa95"
+>>>>>>> 0325f47a950a62678cd6508c391b209259da6810
         },
         {
             "type": "java",
