@@ -5,33 +5,41 @@ import java.util.*;
 public class PrimeSum {
 
     public static void main(String[] args) {
-        int[]  result = PrimeSum(10);
-        printArray(result);
+        int A = 4;
+        int[]  result = generatePrimes(A);
         
-    }
-    public int[] primesum(int A) {
-    
-        int[] primes = generatePrimes(A);
-        int[] sumPair = generateSum(primes,A);   
-        return sumPair;
-    }   
- 
-    public static int[] generateSum(int[] A, int totalSum){
-       
-        int complement;
-        complement = 0;
-        for (int i = 0; i < A.length; i++) {
-            complement = totalSum - A[i];
-            int index = Arrays.binarySearch(A, complement);
-            int found = index < 0 ? -1: A[index];
-            if(found > 1)
-                
+        HashSet<Integer> hs = new HashSet<>();
+        for (int i : result) {
+            hs.add(i);
+        }
+        Iterator<Integer> it = hs.iterator();
+        HashSet<Integer> sol = new HashSet<>();
+
+        while(it.hasNext()){
+            int p = it.next();
+            if(isPrime(A-p)){
+                sol.add(p);
+                sol.add(A-p);
+            }
         }
 
+        System.out.println(sol);
+        //printArray(result);
         
+    }
+        
+    static boolean isPrime(int N){
 
+        if( N <= 1) return false;
+        for (int i = 2; i <= Math.sqrt(N); i++) {
+            if( N % i == 0)
+                return false;
+        }
+
+        return true;
 
     }
+    // }
  
     public static int[] generatePrimes(int A){
         boolean[] prime = new boolean[A+1];
@@ -52,7 +60,7 @@ public class PrimeSum {
             list.add(j);
         }
      
-        System.out.println(list.get(0));
+
         int[] isPrime = new int[list.size()];
         
         for(int i = 0; i < list.size(); i++)
